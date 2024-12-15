@@ -36,7 +36,7 @@ function App() {
               selectedSkills={selectedSkills}
               onSkillsChange={setSelectedSkills}
             />
-            {/* <div className="mt-6 flex justify-end">
+            { <div className="mt-6 flex justify-end">
               <Button
                 onClick={handleSearch}
                 disabled={selectedSkills.length === 0}
@@ -44,7 +44,7 @@ function App() {
               >
                 Search Projects
               </Button>
-            </div> */}
+            </div> }
           </div>
         </div>
 
