@@ -1,4 +1,3 @@
-import React from 'react';
 
 interface ProjectCardProps {
   title: string;
@@ -16,8 +15,7 @@ export function ProjectCard({
   difficulty,
   skills,
   imageUrl,
-  matchedSkills,
-  score,
+
 }: ProjectCardProps) {
   const getDifficultyColor = (difficulty: string) => {
     switch (difficulty) {
@@ -63,36 +61,7 @@ export function ProjectCard({
             </span>
           ))}
         </div>
-        <div className="mt-4 pt-4 border-t">
-          <div className="flex flex-col gap-2">
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-gray-600">
-                Matched Skills: {matchedSkills}/{skills.length}
-              </span>
-              <div className="w-24 h-2 bg-gray-200 rounded-full">
-                <div
-                  className="h-full bg-blue-500 rounded-full"
-                  style={{
-                    width: `${(matchedSkills / skills.length) * 100}%`,
-                  }}
-                />
-              </div>
-            </div>
-            {/* <div className="flex items-center justify-between">
-              <span className="text-sm text-gray-600">
-                Match Score: {Math.round(score * 100)}%
-              </span>
-              <div className="w-24 h-2 bg-gray-200 rounded-full">
-                <div
-                  className="h-full bg-green-500 rounded-full"
-                  style={{
-                    width: `${score * 100}%`,
-                  }}
-                />
-              </div>
-            </div> */}
-          </div>
-        </div>
+       
       </div>
     </div>
   );
